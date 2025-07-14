@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>TropiBoom - Ensaladas</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Khyliany Mena"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="keywords" content="Batidos, Ensaladas, Sodas, Saludable"/>
+    <link rel="stylesheet" href="styles_tienda.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img src="logo.png" alt="Logo de la tienda" class="logo">
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<!--Menú vetical-->
+					<li>
+						<a href="tienda.html">Tienda</a>
+						<ul class="menu-vertical">
+							<li><a href="Batidos.html">Batidos</a></li>
+							<li><a href="Ensaldas.html">Ensaldas</a></li>
+							<li><a href="Sodas.html">Sodas</a></li>
+						</ul>
+					</li>
+
+					<li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+					<li><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="main" id="main">
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+					<!-- Formulario de pago -->
+					<div class="payment-form">
+						<h3>Información de Pago</h3>
+						<label for="card-number">Número de Tarjeta:</label>
+						<input type="text" id="card-number" name="card-number" placeholder="Ingrese el número de tarjeta">
+						<label for="card-name">Nombre en la Tarjeta:</label>
+						<input type="text" id="card-name" name="card-name" placeholder="Ingrese el nombre en la tarjeta">
+						
+						<label for="expiration-date">Fecha de Vencimiento:</label>
+						<input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY">
+						
+						<label for="cvv">CVV:</label>
+						<input type="text" id="cvv" name="cvv" placeholder="Ingrese el código de seguridad CVV">
+						<button id="submit-payment">Realizar Pago</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="container-items">
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://www.poesiadefogon.com/wp-content/uploads/2020/07/ensalada-de-frutas-y-queso-fresco-con-salsa-de-yougurt-2.jpg"
+						alt="1"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Sexy Berry</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://cdn0.recetasgratis.net/es/posts/0/0/5/fresas_con_crema_24500_600.jpg"
+						alt="2"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Fresa criminal</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://www.nutritiousdeliciousness.com/wp-content/uploads/2024/01/Mango-Salsa10-1024x998.jpg"
+						alt="3"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Mango Bombastico</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://th.bing.com/th/id/OIP.XTxm6ErgT_QNlQ5dk_MdzQHaFx?rs=1&pid=ImgDetMain"
+						alt="4"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>La suculenta</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://canalcocina.es/medias/images/1508LaCocinaNaturalDeAnnabelT3EnsaladaNuecesWalnutSalad.jpg"
+						alt="5"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Delicia crocante</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://i.pinimg.com/736x/b3/df/40/b3df4098a5d810f867e3f5225315b738.jpg" 
+					alt="6">
+				</figure>
+				<div class="info-product">
+					<h2>Bocado de paraíso</h2>
+					<p class="price">$7.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://th.bing.com/th/id/R.f5d241a02ff581da70a2b2f9231a77a2?rik=uQ1Kvg%2bGQJcoSg&riu=http%3a%2f%2fwww.recetario-cocina.com%2farchivosbd%2fpina-rellena-de-ensalada-de-frutas.jpg&ehk=gl%2b2WOWkcUF%2fNg8CRdSH3muyUusLNIN7OBx4kPtqhiU%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" 
+					alt="7">
+				</figure>
+				<div class="info-product">
+					<h2>Frutisón</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://vegveg.org/wp-content/uploads/2023/07/banana-and-chocolate-chip-salad.jpg" 
+					alt="8">
+				</figure>
+				<div class="info-product">
+					<h2>FrutiChispas</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://srecetas.es/system/images/2364/full.macedonia_original.jpg" 
+					alt="9">
+				</figure>
+				<div class="info-product">
+					<h2>Con flow</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://i.pinimg.com/736x/dc/32/4b/dc324b28bba327f11bcef60b1e554a11--fruit-plate-fruit-trays.jpg" 
+					alt="10">
+				</figure>
+				<div class="info-product">
+					<h2>El Frutazo</h2>
+					<p class="price">$8.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://i.pinimg.com/736x/ca/b4/fc/cab4fcf05848c97ad61c53bc3052ee8f--sweet--food-and-drinks.jpg" 
+					alt="11">
+				</figure>
+				<div class="info-product">
+					<h2>Piñazo con Flow</h2>
+					<p class="price">$6.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://cdn.cheapism.com/images/Yogurt-Banana.max-825x550.jpg" 
+					alt="12">
+				</figure>
+				<div class="info-product">
+					<h2>BananaStyle</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://img.freepik.com/premium-psd/juicy-red-strawberries-served-coconut-dish-placed-transparent-background_176841-83134.jpg" 
+					alt="13">
+				</figure>
+				<div class="info-product">
+					<h2>FrutiFiesta</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://i.pinimg.com/originals/19/b8/2c/19b82c343524234c55e4d71d3f67aa64.jpg" 
+					alt="14">
+				</figure>
+				<div class="info-product">
+					<h2>Sweet Bowl</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			
+			<div class="item">
+				<figure>
+					<img src="https://i.pinimg.com/originals/43/1e/2d/431e2d0ac4509aa4f7780d8f48095005.jpg" 
+					alt="15">
+				</figure>
+				<div class="info-product">
+					<h2>FrutiPop</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<!--Fin productos-->
+		</div>
+	
+	<script src="tienda.js"></script>
+	<!--Pie de la página-->
+
+<footer id="footer">
+    <div class="title-text"> <p>CONTACTO</p>
+   <h1>Sede Tropical</h1>
+   <i><h4>TropiBoom 🌴</h4></i>
+    </div>
+
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Horarios de apertura</h1>
+            <p><img src="icon1.png">Lunes a viernes - 10am hasta 6pm</p>
+            <p><img src="icon1.png">Sábados y domingos - 11am hasta 7pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Mantente en contacto</h1>
+            <p>Plaza Mía, Local 07, Vía España, Ciudad de Panamá<img src="icon2.png"></p>
+            <p>contacto@tropiboom.com<img src="icon3.png"></p>
+            <p>+507 6123-4567<img src="icon4.png"></p>
+        </div>
+    </div>
+    <div class="social-links">
+        <img src="if.png">
+        <img src="in.png">
+        <img src="it.png">
+        <img src="iy.png">
+    </div>
+</footer>      
+</body>
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+    <title>TropiBoom - Batidos</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Khyliany Mena"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/png" href="logo.png">
+    <meta name="keywords" content="Batidos, Ensaladas, Sodas, Saludable"/>
+    <link rel="stylesheet" href="styles_tienda.css">
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img src="logo.png" alt="Logo de la tienda" class="logo">
+			</div>
+			<nav class="menu">
+				<ul>
+					<li><a href="index.html">Inicio</a></li>
+					<!--Menú vetical-->
+					<li>
+						<a href="tienda.html">Tienda</a>
+						<ul class="menu-vertical">	
+							<li><a href="Batidos.html">Batidos</a></li>
+							<li><a href="Ensaldas.html">Ensaldas</a></li>
+							<li><a href="Sodas.html">Sodas</a></li>
+						</ul>
+					</li>
+
+					<li><a href="Sobre_nosotros.html">Sobre nosotros</a></li>
+					<li><a href="Contacto.html">Contacto</a></li>
+				</ul>
+			</nav>
+			<div class="main" id="main">
+			<div class="container-icon">
+				<div class="container-cart-icon">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="icon-cart"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+						/>
+					</svg>
+					<div class="count-products">
+						<span id="contador-productos">0</span>
+					</div>
+				</div>
+
+				<div class="container-cart-products hidden-cart">
+					<div class="row-product hidden">
+						<div class="cart-product">
+							<div class="info-cart-product">
+								<span class="cantidad-producto-carrito">1</span>
+								<p class="titulo-producto-carrito">Zapatos Nike</p>
+								<span class="precio-producto-carrito">$80</span>
+							</div>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="icon-close"
+							>
+								<path
+									stroke-linecap="round"
+									stroke-linejoin="round"
+									d="M6 18L18 6M6 6l12 12"
+								/>
+							</svg>
+						</div>
+					</div>
+
+					<div class="cart-total hidden">
+						<h3>Total:</h3>
+						<span class="total-pagar">$200</span>
+					</div>
+					<p class="cart-empty">El carrito está vacío</p>
+					<!-- Formulario de pago -->
+					<div class="payment-form">
+						<h3>Información de Pago</h3>
+						<label for="card-number">Número de Tarjeta:</label>
+						<input type="text" id="card-number" name="card-number" placeholder="Ingrese el número de tarjeta">
+						<label for="card-name">Nombre en la Tarjeta:</label>
+						<input type="text" id="card-name" name="card-name" placeholder="Ingrese el nombre en la tarjeta">
+						
+						<label for="expiration-date">Fecha de Vencimiento:</label>
+						<input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY">
+						
+						<label for="cvv">CVV:</label>
+						<input type="text" id="cvv" name="cvv" placeholder="Ingrese el código de seguridad CVV">
+						<button id="submit-payment">Realizar Pago</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="container-items">
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://media-cdn.tripadvisor.com/media/photo-s/15/2d/50/d0/triple-berry.jpg"
+						alt="1"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Dragón chismoso</h2>
+					<p class="price">$6.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://shopping.c.yimg.jp/lib/himawarikikaku/3-acai-smoothie-x2a.jpg?size=n"
+						alt="2"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>BerryBoom Sexy</h2>
+					<p class="price">$6.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://images.aws.nestle.recipes/original/2020_03_02T09_18_59_mrs_ImageRecipes_145081lrg.jpg"
+						alt="3"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Frutazo</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://recetasdecolombia.com/wp-content/uploads/2022/02/Receta-para-hacer-batido-de-guanabana-tradicional-colombiano.jpg"
+						alt="4"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>Guanabanera Bombastic</h2>
+					<p class="price">$2.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img
+						src="https://img.freepik.com/psd-premium/luminosos-batidos-transparentes-crema-batida-desbordados-color-neon-comida-bebida-coleccion-y2k_1142283-74830.jpg"
+						alt="5"
+					/>
+				</figure>
+				<div class="info-product">
+					<h2>La galáctica</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://holatelcel.com/wp-content/uploads/2017/05/1_700-19.jpg" 
+					alt="6">
+				</figure>
+				<div class="info-product">
+					<h2>La sweet sweet</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://th.bing.com/th/id/OIP.4NLzS7pb0aZh2LopSMB_ygHaLH?rs=1&pid=ImgDetMain" 
+					alt="7">
+				</figure>
+				<div class="info-product">
+					<h2>TropiRico</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://i.blogs.es/5925c6/batido-1/650_1200.jpg" 
+					alt="8">
+				</figure>
+				<div class="info-product">
+					<h2>FrutiBoom</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://th.bing.com/th/id/OIP._bkf7CaHWRVcnLBgLazR0gHaHa?rs=1&pid=ImgDetMain" 
+					alt="9">
+				</figure>
+				<div class="info-product">
+					<h2>Tropiclón</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://images.fineartamerica.com/images-medium-large-5/2-coconut-drink-with-pineapple-cocktail-cherry-and-orchid-foodcollection.jpg" 
+					alt="10">
+				</figure>
+				<div class="info-product">
+					<h2>Coco en fuga</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://th.bing.com/th/id/OIP.Q7NViwRD7N_zPGaYMM17swHaEj?rs=1&pid=ImgDetMain" 
+					alt="11">
+				</figure>
+				<div class="info-product">
+					<h2>Maracuyazo</h2>
+					<p class="price">$2.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://www.lamansiondelasideas.com/wp-content/uploads/2022/10/Batido-de-guayaba-y-fresas.jpg" 
+					alt="12">
+				</figure>
+				<div class="info-product">
+					<h2>Guayabazo</h2>
+					<p class="price">$4.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://www.dondeir.com/wp-content/uploads/2019/07/cereza-smores-red-velvet-malteada-bigotes-de-leche-1024x767.jpg" 
+					alt="13">
+				</figure>
+				<div class="info-product">
+					<h2>MalteadaBerry</h2>
+					<p class="price">$5.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<div class="item">
+				<figure>
+					<img src="https://cookandlogic.com/wp-content/uploads/2023/06/amanecer-atardecer-receta-de-batido-tropical.webp" 
+					alt="14">
+				</figure>
+				<div class="info-product">
+					<h2>Mix tropical</h2>
+					<p class="price">$6.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			
+			<div class="item">
+				<figure>
+					<img src="https://imag.bonviveur.com/batidos-de-diferentes-sabores-sobre-una-mesa.jpg" 
+					alt="15">
+				</figure>
+				<div class="info-product">
+					<h2>La revoltosa pty</h2>
+					<p class="price">$3.00</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+
+			<!--Fin productos-->
+		</div>
+	
+	<script src="tienda.js"></script>
+	<!--Pie de la página-->
+
+<footer id="footer">
+    <div class="title-text"> <p>CONTACTO</p>
+   <h1>Sede Tropical</h1>
+   <i><h4>TropiBoom 🌴</h4></i>
+    </div>
+
+    <div class="footer-row">
+        <div class="footer-left">
+            <h1>Horarios de apertura</h1>
+            <p><img src="icon1.png">Lunes a viernes - 10am hasta 6pm</p>
+            <p><img src="icon1.png">Sábados y domingos - 11am hasta 7pm</p>
+        </div>
+        <div class="footer-right">
+            <h1>Mantente en contacto</h1>
+            <p>Plaza Mía, Local 07, Vía España, Ciudad de Panamá<img src="icon2.png"></p>
+            <p>contacto@tropiboom.com<img src="icon3.png"></p>
+            <p>+507 6123-4567<img src="icon4.png"></p>
+        </div>
+    </div>
+    <div class="social-links">
+        <img src="if.png">
+        <img src="in.png">
+        <img src="it.png">
+        <img src="iy.png">
+    </div>
+</footer>      
+</body>
+</html>
